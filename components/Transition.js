@@ -3,14 +3,17 @@ import { motion } from 'framer-motion';
 const transitionVariants = {
   initial: {
     x: '100%',
+    zIndex: '-1',
     opacity: 1,
   },
   animate: {
     x: '100%',
+    zIndex: '-1',
     opacity: 0,
   },
   exit: {
     x: '100%',
+    zIndex: '1',
     opacity: 1,
   }
 }
