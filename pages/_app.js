@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import '../styles/globals.css';
 import Layout from '../components/Layout';
 import Transition from '../components/Transition';
@@ -10,6 +11,11 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
   <Layout>
+    <Head>
+      <link rel='shortcut icon' href='/favicon.ico' />
+      <title>Mark | Personal Portfolio</title>
+      <meta name="description" content="Mark is a web-developer with 1 year of experience." />
+    </Head>
     <AnimatePresence mode='wait'>
       <motion.div key={router.route} className='h-full'>
         <Transition />
