@@ -98,13 +98,13 @@ import CountUp from 'react-countup';
 const About = () => {
   const [index, setIndex] = useState(0);
 
-  return <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+  return <div className='h-full pb-32 pt-8 bg-primary/30 xl:pt-20 text-center xl:text-left'>
     <Circles />
     <motion.div variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className='hidden xl:flex absolute bottom-0 -left-[370px]'>
       <Avatar />
     </motion.div>
     <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
-      <div className='flex-1 flex flex-col justify-center'>
+      <div className='flex-1 flex flex-col justify-center z-10'>
         <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent designs.</motion.h2>
         <motion.p variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden' className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>10 years ago, I began freelancing as a developer. Since then, I&apos;ve done remote work for agencies, counsulted for startups, and collaborated  on digital products for business and consumer use.</motion.p>
         <motion.div variants={fadeIn('right', 0.6)} initial='hidden' animate='show' exit='hidden' className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'>
